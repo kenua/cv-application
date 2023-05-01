@@ -1,0 +1,51 @@
+{
+   "formFields": {
+     "nameField": "john doe",
+     "jobTitleField": "web designer",
+     "summaryField": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+   },
+   "skillList": [
+     {"id": "lh4t25mb", "value": "figma"},
+     {"id": "lh4t2bay", "value": "sketch"},
+     {"id": "lh4t2cts", "value": "html"},
+     {"id": "lh4t2dup", "value": "css"},
+     {"id": "lh4t2fb2", "value": "git"},
+     {"id": "lh4t2gyg", "value": "sass"},
+     {"id": "lh4t2j4l", "value": "bootstrap"}
+   ],
+   "contactList": [
+     {"id": "lh4t2uy9", "value": "johndoe.uk.net"},
+     {"id": "lh4t3294", "value": "123-456-789"},
+     {"id": "lh4t3904", "value": "johndoe@email.net"}
+   ],
+   "educExpList": [
+     {"dateOfStudy": "2023", "id": "lh4t5q0m", "schoolName": "school 1", "titleOfStudy": "web design"},
+     {"dateOfStudy": "2022", "id": "lh4t5qn9", "schoolName": "school 2", "titleOfStudy": "arts"}
+   ],
+   "workExpList": [
+      {
+         "id": "lh4t25aa",
+         "companyName": "company 1",
+         "jobPosition": "janitor",
+         "startedJobAt": "2023",
+         "endedJobAt": "2022",
+         "tasks": [
+            {"id": "lh4tnry7", "value": "item 1"},
+            {"id": "lh4tntmi", "value": "item 2"},
+            {"id": "lh4tnvqd", "value": "item 3"}
+         ]
+      },
+      {
+         "id": "lh4t25ab",
+         "companyName": "company 2",
+         "jobPosition": "position 2",
+         "startedJobAt": "2021",
+         "endedJobAt": "2022",
+         "tasks": [
+            {"id": "lh4tnry7", "value": "item 1"},
+            {"id": "lh4tntmi", "value": "item 2"},
+            {"id": "lh4tnvqd", "value": "item 3"}
+         ]
+      }
+   ]
+}

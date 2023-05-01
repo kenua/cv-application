@@ -1,0 +1,12 @@
+.upper {
+   text-transform: uppercase;
+}
+.mb-1 {
+   margin-bottom: 16px;
+}
+.mt-2 {
+   margin-top: 32px;
+}
+.mb-2 {
+   margin-bottom: 32px;
+}
