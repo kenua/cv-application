@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+   body {
+      padding: 60px 0;
+   }
+   .frame {
+      width: 100%;
+      max-width: 768px;
+      border: 6px solid var(--brown);
+      margin: 0 auto;
+      padding: 60px 50px;
+   }
+   .form__label {
+      font-size: 2.4rem;
+      text-align: right;
+      margin-bottom: 0px;
+   }
+   .form__input {
+      width: 100%;
+      padding: 15px 11px 9px;
+   }
+   .form-flex-field {
+      flex-wrap: nowrap;
+   }
+   .form-flex-field__label {
+      width: auto;
+      margin-right: 14px;
+      flex-grow: 1;
+   }
+   .form-flex-field__input {
+      max-width: 399px;
+   }
+}
