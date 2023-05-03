@@ -5,6 +5,7 @@ import './styles/fonts.css';
 import './styles/reset.css';
 import './styles/modules.css';
 import './styles/layout.css';
+import './styles/resume.css';
 import './styles/media-queries.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

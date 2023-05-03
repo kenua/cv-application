@@ -36,6 +36,7 @@ html {
 body {
 	font-family: 'Inter';
 	line-height: 1;
+	color: var(--black);
 }
 ol, ul {
 	list-style: none;

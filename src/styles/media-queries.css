@@ -29,4 +29,28 @@
    .form-flex-field__input {
       max-width: 399px;
    }
+   /* RESUME FLEX SECTION */
+   .resume-flex-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+   }
+   .resume-flex-section__item {
+      min-width: 313px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 35px 0 35px 35px;
+   }
+   .resume-flex-section__item:nth-child(3) {
+      padding-right: 0;
+   }
+   .resume-flex-section__vertical-line {
+      width: 3px;
+      height: auto;
+      margin: 0;
+   }
+
+   .list-item {
+      padding-left: 75px;
+   }
 }

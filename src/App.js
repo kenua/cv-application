@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Form from './components/Form';
+import Resume from './components/Resume';
 import uniqid from 'uniqid';
 import placeholderData from './placeholderData.json';
 
@@ -109,10 +110,18 @@ class App extends Component {
 			taskList: [],
 		}));
 	}
+
+	toggleForm = (e) => {
+		e.preventDefault();
+
+		this.setState(prevState => ({
+			printForm: !prevState.printForm
+		}));
+	}
       
 	render() {
 		let { formFields, skillList, contactList, educExpList, taskList, workExpList } = this.state;
-		const formComp = <Form
+		const FormComponent = <Form
 			{...formFields}
 			skillList={skillList} 
 			contactList={contactList}
@@ -124,13 +133,26 @@ class App extends Component {
 			removeListItem={this.removeListItem}
 			populateWorkExpList={this.populateWorkExpList}
 			populateEducExpList={this.populateEducExpList}
+			toggleForm={this.toggleForm}
 		/>;
-
-		let content = this.state.printForm ? formComp : <p>result component</p>;
+		const ResumeComponent = <Resume 
+			name={formFields.nameField}
+			jobTitle={formFields.jobTitleField}
+			summary={formFields.summaryField}
+			skillList={skillList}
+			contactList={contactList}
+			educExpList={educExpList}
+			taskList={taskList}
+			workExpList={workExpList}
+			toggleForm={this.toggleForm}
+		/>
 
 		return (
 			<div className="content blob-bg-1">
-				{content}
+				{ this.state.printForm 
+				  ? FormComponent
+				  : ResumeComponent
+				}
 			</div>
 		);
    }     

@@ -1,5 +1,12 @@
+.black {
+   color: var(--black);
+}
 .upper {
    text-transform: uppercase;
+}
+.bold-upper {
+   text-transform: uppercase;
+   font-weight: bold;
 }
 .mb-1 {
    margin-bottom: 16px;

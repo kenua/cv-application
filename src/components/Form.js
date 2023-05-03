@@ -38,6 +38,7 @@ class Form extends Component {
          contactList,
          educExpList,
          workExpList,
+         toggleForm,
       } = this.props;
 
       const educExpLi = educExpList.map(educObj => {
@@ -94,7 +95,7 @@ class Form extends Component {
 
       return (
          <div className="form frame">
-            <form>
+            <form onSubmit={toggleForm}>
                <div className="form-flex-field mb-1">
                   <label htmlFor="nameField" className="form__label form-flex-field__label">Name</label>
                   <input 
@@ -266,6 +267,8 @@ class Form extends Component {
                <button className="form__button mt-2 mb-2" type="button" onClick={this.addWorkItem}>Add</button>
 
                <ul>{ workExpLi }</ul>
+
+               <button className="form__button mt-2" type="submit">Generate Resume</button>
             </form>
          </div>
       );
