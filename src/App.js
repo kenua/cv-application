@@ -129,9 +129,9 @@ class App extends Component {
 		let content = this.state.printForm ? formComp : <p>result component</p>;
 
 		return (
-			<>
+			<div className="content blob-bg-1">
 				{content}
-			</>
+			</div>
 		);
    }     
 	
