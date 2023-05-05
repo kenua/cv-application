@@ -17,15 +17,19 @@ class Resume extends Component {
 
       const workList = workExpList.map(workObj => {
          return (
-            <div key={workObj.id} className="list-item black">
-               <h3 className="list-item__heading">
+            <div key={workObj.id} className="list-item c-black">
+               <h3 className="list-item__heading space-between">
                   <span className="bold-upper">
                      { workObj.companyName }
                   </span> 
-                  <time>{ workObj.startedJobAt } - { workObj.endedJobAt }</time>
+                  <span>
+                     <time>{ workObj.startedJobAt }</time>
+                     &nbsp;-&nbsp;
+                     <time>{ workObj.endedJobAt }</time>
+                  </span>
                </h3>
                <h4 className="list-item__subheading mb-1">{ workObj.jobPosition }</h4>
-               <ul className="list-item__ul">
+               <ul className="disc-list">
                   { workObj.tasks.map(task => (<li key={task.id} className="list-item__li mb-1">{ task.value }</li>)) }
                </ul>
             </div>
@@ -34,8 +38,8 @@ class Resume extends Component {
 
       const educList = educExpList.map(educObj => {
          return (
-            <div key={educObj.id} className="list-item">
-               <h3 className="list-item__heading">
+            <div key={educObj.id} className="list-item c-black">
+               <h3 className="list-item__heading space-between">
                   <span className="bold-upper">
                      { educObj.schoolName }
                   </span> 
@@ -48,48 +52,48 @@ class Resume extends Component {
 
       return (
          <>
-            <div className="resume frame">
+            <div className="frame c-brown fs-1">
                <section className="resume-head">
-                  <h1 className="resume-head__name mb-1">{name}</h1>
-                  <h2 className="resume-head__job-title">{jobTitle}</h2>
+                  <h1 className="resume-head__name f-bold f-upper mb-1">{name}</h1>
+                  <h2 className="fs-2 f-upper">{jobTitle}</h2>
                </section>
 
                <div className="resume-section resume-flex-section mb-2">
                   <section className="resume-flex-section__item">
-                     <h2 className="resume__heading mb-1">Skills</h2>
-                     <ul className="resume-flex-section__ul">
+                     <h2 className="fs-2 mb-1 f-bold f-upper">Skills</h2>
+                     <ul className="disc-list c-black">
                         { skillList.map(skill => <li key={skill.id} className="resume-flex-section__li">{skill.value}</li>) }
                      </ul>
                   </section>
                   <div className="resume-flex-section__vertical-line"></div>
                   <section className="resume-flex-section__item">
-                     <h2 className="resume__heading mb-1">Contact</h2>
-                     <ul className="resume-flex-section__ul">
+                     <h2 className="fs-2 mb-1 f-bold f-upper">Contact</h2>
+                     <ul className="disc-list c-black">
                         { contactList.map(contact => <li key={contact.id} className="resume-flex-section__li">{contact.value}</li>) }
                      </ul>
                   </section>
                </div>
 
                <section className="resume-section mb-2">
-                  <h2 className="resume__heading mb-1">Summary</h2>
-                  <p className="resume__summary">{summary}</p>
+                  <h2 className="fs-2 mb-1 f-bold f-upper">Summary</h2>
+                  <p className="f-height c-black">{summary}</p>
                </section>
 
                <section className="resume-section mb-2">
-                  <h2 className="resume__heading mb-2">Work experience</h2>
+                  <h2 className="fs-2 mb-2 f-bold f-upper">Work experience</h2>
 
                   { workList }
                </section>
 
                <section className="resume-section mb-2">
-                  <h2 className="resume__heading mb-2">Education</h2>
+                  <h2 className="fs-2 mb-2 f-bold f-upper">Education</h2>
 
                   { educList }
                </section>
             </div>
             
             <button 
-               className="form__button mt-2" 
+               className="form__button mt-2 f-bold f-upper" 
                type="button"
                onClick={toggleForm}
             >

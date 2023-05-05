@@ -1,6 +1,3 @@
-.resume {
-   font-size: 1.6rem;
-}
 .resume-section {
    padding: 35px;
    position: relative;
@@ -16,15 +13,8 @@
    top: 0;
    left: 0;
 }
-.resume__heading {
-   font-size: 2.4rem;
-   font-weight: bold;
-   text-transform: uppercase;
-   color: var(--brown);
-}
 /* RESUME HEAD */
 .resume-head {
-   color: var(--brown);
    margin-bottom: 93px;
 }
 .resume-head::before {
@@ -38,12 +28,6 @@
 }
 .resume-head__name {
    font-size: 7.2rem;
-   font-weight: bold;
-   text-transform: uppercase;
-}
-.resume-head__job-title {
-   font-size: 2.4rem;
-   text-transform: uppercase;
 }
 
 /* RESUME FLEX SECTION */
@@ -55,17 +39,8 @@
    border-radius: 30px;
    margin: 35px 0;
 }
-.resume-flex-section__ul {
-   list-style: disc;
-   padding-left: 20px;
-}
 .resume-flex-section__li {
    margin-bottom: 8px;
-}
-
-/* SUMMARY */
-.resume__summary {
-   line-height: 30px;
 }
 
 /*  */
@@ -73,14 +48,8 @@
    margin-bottom: 40px;
 }
 .list-item__heading {
-   display: flex;
-   justify-content: space-between;
    margin-bottom: 4px;
 }
 .list-item__subheading {
    text-transform: capitalize;
-}
-.list-item__ul {
-   list-style: disc;
-   padding-left: 25px;
 }

@@ -48,7 +48,7 @@ class ListField extends Component {
       return (
          <>
             <div className="form-flex-field">
-               <label htmlFor={fieldKey} className="form__label form-flex-field__label">{label}</label>
+               <label htmlFor={fieldKey} className="form__label form-flex-field__label f-upper f-bold">{label}</label>
                <input
                   id={fieldKey}
                   className="form__input form-flex-field__input"

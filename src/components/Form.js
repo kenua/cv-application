@@ -45,11 +45,11 @@ class Form extends Component {
          return (
             <li key={educObj.id} className="form-experience">
                <div className="form-experience__content">
-                  <h3 className="form-experience__heading">
-                     {educObj.schoolName} 
-                     <time dateTime={educObj.dateOfStudy} className="form-experience__date">{educObj.dateOfStudy}</time>
+                  <h3 className="form-experience__heading fs-2 space-between">
+                     <span className="f-bold f-upper">{educObj.schoolName}</span>
+                     <time dateTime={educObj.dateOfStudy}>{educObj.dateOfStudy}</time>
                   </h3>
-                  <h4 className="form-experience__subheading">{educObj.titleOfStudy}</h4>
+                  <h4 className="form-experience__subheading mb-1 f-upper">{educObj.titleOfStudy}</h4>
                </div>
                <button 
                   className="form__button form__button--auto-height form__button--sign form__button--red" 
@@ -67,18 +67,18 @@ class Form extends Component {
          return (
             <li key={workObj.id} className="form-experience">
                <div className="form-experience__content">
-                  <h3 className="form-experience__heading">
-                     {workObj.companyName}
+                  <h3 className="form-experience__heading fs-2 space-between">
+                     <span className="f-upper f-bold">{workObj.companyName}</span>
 
-                     <span className="form-experience__date">
+                     <span>
                         <time dateTime={workObj.startedJobAt}>{workObj.startedJobAt}</time>
                         &nbsp;-&nbsp;
                         <time dateTime={workObj.endedJobAt}>{workObj.endedJobAt}</time>
                      </span>
                   </h3>
-                  <h4 className="form-experience__subheading">{workObj.jobPosition}</h4>
+                  <h4 className="form-experience__subheading mb-1 f-upper">{workObj.jobPosition}</h4>
                   <ul className="form-experience__ul">
-                     {workObj.tasks.map(task => <li key={task.id} className="form-experience__li">{task.value}</li>)}
+                     {workObj.tasks.map(task => <li key={task.id} className="mb-1">{task.value}</li>)}
                   </ul>
                </div>
                <button 
@@ -94,13 +94,13 @@ class Form extends Component {
       });
 
       return (
-         <div className="form frame">
+         <div className="form frame c-brown fs-1">
             <form onSubmit={toggleForm}>
                <div className="form-flex-field mb-1">
-                  <label htmlFor="nameField" className="form__label form-flex-field__label">Name</label>
+                  <label htmlFor="nameField" className="form__label form-flex-field__label f-upper f-bold">Name</label>
                   <input 
                      id="nameField" 
-                     className="form__input form-flex-field__input upper" 
+                     className="form__input form-flex-field__input f-upper" 
                      type="text" 
                      value={nameField} 
                      name='nameField' 
@@ -109,10 +109,10 @@ class Form extends Component {
                </div>
 
                <div className="form-flex-field mb-1">
-                  <label htmlFor="jobTitleField" className="form__label form-flex-field__label">Job title</label>
+                  <label htmlFor="jobTitleField" className="form__label form-flex-field__label f-upper f-bold">Job title</label>
                   <input 
                      id="jobTitleField" 
-                     className="form__input form-flex-field__input upper" 
+                     className="form__input form-flex-field__input f-upper" 
                      type="text" 
                      value={jobTitleField} 
                      name='jobTitleField' 
@@ -121,10 +121,10 @@ class Form extends Component {
                </div>
 
                <div className="form__summary-container">
-                  <label htmlFor="summaryField" className="form__label">Summary</label>
+                  <label htmlFor="summaryField" className="form__label f-upper f-bold">Summary</label>
                   <textarea 
                      id="summaryField" 
-                     className="form__input form__input--textarea" 
+                     className="form__input form__input--textarea mt-2 f-height" 
                      value={summaryField} 
                      name='summaryField' 
                      onChange={handleInputChange} 
@@ -153,10 +153,10 @@ class Form extends Component {
                   removeListItem={removeListItem}
                />
                
-               <h2 className="form__heading">Education</h2>
+               <h2 className="form__heading fs-2 f-upper f-bold">Education</h2>
 
                <div className="form-flex-field mb-1">
-                  <label htmlFor="schoolNameField" className="form__label form-flex-field__label">School Name</label>
+                  <label htmlFor="schoolNameField" className="form__label form-flex-field__label f-upper f-bold">School Name</label>
                      <input 
                         id="schoolNameField"
                         className="form__input form-flex-field__input upper"
@@ -169,7 +169,7 @@ class Form extends Component {
                </div>
 
                <div className="form-flex-field mb-1">
-                  <label htmlFor="titleOfStudyField" className="form__label form-flex-field__label">Title of study</label>
+                  <label htmlFor="titleOfStudyField" className="form__label form-flex-field__label f-upper f-bold">Title of study</label>
                   <input 
                      id="titleOfStudyField"
                      className="form__input form-flex-field__input upper"
@@ -181,7 +181,7 @@ class Form extends Component {
                </div>
 
                <div className="form-flex-field mb-1">
-                  <label htmlFor="dateOfStudyField" className="form__label form-flex-field__label">Date of study</label>
+                  <label htmlFor="dateOfStudyField" className="form__label form-flex-field__label f-upper f-bold">Date of study</label>
                   <input 
                      id="dateOfStudyField"
                      className="form__input form-flex-field__input upper" 
@@ -194,14 +194,20 @@ class Form extends Component {
                   />
                </div>
 
-               <button className="form__button mt-2 mb-2" type="button" onClick={this.addEducItem}>Add</button>
+               <button 
+                  className="form__button f-upper f-bold mt-2 mb-2" 
+                  type="button" 
+                  onClick={this.addEducItem}
+               >
+                  Add
+               </button>
 
                <ul>{educExpLi}</ul>
 
-               <h2 className="form__heading">Work experience</h2>
+               <h2 className="form__heading fs-2 f-upper f-bold">Work experience</h2>
 
                <div className="form-flex-field mb-1">
-                  <label htmlFor="companyNameField" className="form__label form-flex-field__label">Company Name</label>
+                  <label htmlFor="companyNameField" className="form__label form-flex-field__label f-upper f-bold">Company Name</label>
                      <input 
                         id="companyNameField"
                         className="form__input form-flex-field__input upper" 
@@ -214,7 +220,7 @@ class Form extends Component {
                </div>
 
                <div className="form-flex-field mb-1">
-                  <label htmlFor="jobPositionField" className="form__label form-flex-field__label">Job Position</label>
+                  <label htmlFor="jobPositionField" className="form__label form-flex-field__label f-upper f-bold">Job Position</label>
                   <input 
                      id="jobPositionField"
                      className="form__input form-flex-field__input upper" 
@@ -226,7 +232,7 @@ class Form extends Component {
                </div>
 
                <div className="form-flex-field mb-1">
-                  <label htmlFor="startedJobAtField" className="form__label form-flex-field__label">Started at</label>
+                  <label htmlFor="startedJobAtField" className="form__label form-flex-field__label f-upper f-bold">Started at</label>
                   <input 
                      id="startedJobAtField"
                      className="form__input form-flex-field__input upper" 
@@ -240,7 +246,7 @@ class Form extends Component {
                </div>
 
                <div className="form-flex-field mb-1">
-                  <label htmlFor="endedJobAtField" className="form__label form-flex-field__label">Ended at</label>
+                  <label htmlFor="endedJobAtField" className="form__label form-flex-field__label f-upper f-bold">Ended at</label>
                   <input 
                      id="endedJobAtField"
                      className="form__input form-flex-field__input upper" 
@@ -264,11 +270,22 @@ class Form extends Component {
                   removeListItem={removeListItem}
                />
 
-               <button className="form__button mt-2 mb-2" type="button" onClick={this.addWorkItem}>Add</button>
+               <button 
+                  className="form__button f-upper f-bold mt-2 mb-2" 
+                  type="button" 
+                  onClick={this.addWorkItem}
+               >
+                  Add
+               </button>
 
                <ul>{ workExpLi }</ul>
 
-               <button className="form__button mt-2" type="submit">Generate Resume</button>
+               <button 
+                  className="form__button f-upper f-bold mt-2" 
+                  type="submit"
+               >
+                  Generate Resume
+               </button>
             </form>
          </div>
       );

@@ -1,8 +1,23 @@
-.black {
+.c-black {
    color: var(--black);
 }
-.upper {
+.c-brown {
+   color: var(--brown);
+}
+.f-upper {
    text-transform: uppercase;
+}
+.f-bold {
+   font-weight: bold;
+}
+.fs-1 {
+   font-size: 1.6rem;
+}
+.fs-2 {
+   font-size: 2.4rem;
+}
+.f-height {
+   line-height: 30px;
 }
 .bold-upper {
    text-transform: uppercase;
@@ -16,4 +31,12 @@
 }
 .mb-2 {
    margin-bottom: 32px;
+}
+.space-between {
+   display: flex;
+   justify-content: space-between;
+}
+.disc-list {
+   list-style: disc;
+   padding-left: 20px;
 }

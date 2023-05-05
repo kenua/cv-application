@@ -55,7 +55,9 @@ table {
 }
 input, button, textarea {
 	font-family: inherit;
+	font-size: inherit;
 	background-color: transparent;
+	color: inherit;
 	padding: 0;
 	border: none;
 	display: block;
