@@ -93,7 +93,7 @@ class Resume extends Component {
             </div>
             
             <button 
-               className="form__button mt-2 f-bold f-upper" 
+               className="button mt-2 f-bold f-upper" 
                type="button"
                onClick={toggleForm}
             >

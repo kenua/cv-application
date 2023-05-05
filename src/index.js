@@ -4,7 +4,7 @@ import App from './App';
 import './styles/fonts.css';
 import './styles/reset.css';
 import './styles/modules.css';
-import './styles/layout.css';
+import './styles/form.css';
 import './styles/resume.css';
 import './styles/media-queries.css';
 

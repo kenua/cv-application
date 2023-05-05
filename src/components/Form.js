@@ -52,12 +52,12 @@ class Form extends Component {
                   <h4 className="form-experience__subheading mb-1 f-upper">{educObj.titleOfStudy}</h4>
                </div>
                <button 
-                  className="form__button form__button--auto-height form__button--sign form__button--red" 
+                  className="button button--auto-height button--sign button--red" 
                   type="button" 
                   onClick={() => removeListItem('educExpList', educObj.id)}
                >
                   Delete
-                  <span className="form__button-line"></span>
+                  <span className="button-line"></span>
                </button>
             </li>
          );
@@ -82,12 +82,12 @@ class Form extends Component {
                   </ul>
                </div>
                <button 
-                  className="form__button form__button--auto-height form__button--sign form__button--red" 
+                  className="button button--auto-height button--sign button--red" 
                   type="button" 
                   onClick={() => removeListItem('workExpList', workObj.id)}
                >
                   Delete
-                  <span className="form__button-line"></span>
+                  <span className="button-line"></span>
                </button>
             </li>
          );
@@ -195,7 +195,7 @@ class Form extends Component {
                </div>
 
                <button 
-                  className="form__button f-upper f-bold mt-2 mb-2" 
+                  className="button f-upper f-bold mt-2 mb-2" 
                   type="button" 
                   onClick={this.addEducItem}
                >
@@ -271,7 +271,7 @@ class Form extends Component {
                />
 
                <button 
-                  className="form__button f-upper f-bold mt-2 mb-2" 
+                  className="button f-upper f-bold mt-2 mb-2" 
                   type="button" 
                   onClick={this.addWorkItem}
                >
@@ -281,7 +281,7 @@ class Form extends Component {
                <ul>{ workExpLi }</ul>
 
                <button 
-                  className="form__button f-upper f-bold mt-2" 
+                  className="button f-upper f-bold mt-2" 
                   type="submit"
                >
                   Generate Resume

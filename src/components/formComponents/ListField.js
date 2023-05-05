@@ -33,13 +33,13 @@ class ListField extends Component {
                   {item.value}
                </div>
                <button 
-                  className="form__button form__button--sign form__button--red"
+                  className="button button--sign button--red"
                   type="button" 
                   onClick={() => removeListItem(listKey, item.id)}
                   title="Remove"
                >
                   Delete
-                  <span className="form__button-line"></span>
+                  <span className="button-line"></span>
                </button>
             </li>
          );
@@ -58,10 +58,10 @@ class ListField extends Component {
                   name={fieldKey} 
                   onChange={handleInputChange} 
                />
-               <button className="form__button form__button--sign" type="button" onClick={this.add} title="Add Item">
+               <button className="button button--sign" type="button" onClick={this.add} title="Add Item">
                   Add
-                  <span className="form__button-line"></span>
-                  <span className="form__button-line form__button-line--rotated"></span>
+                  <span className="button-line"></span>
+                  <span className="button-line button-line--rotated"></span>
                </button>
             </div>
             <ul className=" mb-1">

@@ -1,3 +1,6 @@
+.wrapper {
+   padding: 30px 16px;
+}
 .c-black {
    color: var(--black);
 }
@@ -39,4 +42,57 @@
 .disc-list {
    list-style: disc;
    padding-left: 20px;
+}
+/* BUTTON STYLES s*/
+.button {
+   font-size: 2.4rem;
+   color: var(--brown);
+   width: 100%;
+   height: 50px;
+   border: 6px solid var(--brown);
+   position: relative;
+   transition: background-color 300ms ease-in-out,
+               color 300ms ease-in-out,
+               border-color 300ms ease-in-out;
+}
+.button:focus, 
+.button:hover {
+   background-color: var(--brown);
+   color: var(--white);
+}
+.button:hover .button-line,
+.button:focus .button-line {
+   background-color: var(--white);
+}
+.button--auto-height {
+   height: auto;
+}
+.button--sign {
+   text-indent: -9999px;
+   width: 50px;
+   flex-shrink: 0;
+}
+.button--red {
+   background-color: var(--brown);
+}
+.button--red:focus,
+.button--red:hover {
+   background-color: var(--red);
+   border-color: var(--red);
+}
+.button--red .button-line {
+   background-color: var(--white);
+}
+.button-line {
+   background-color: var(--brown);
+   width: 20px;
+   height: 2px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%);
+   transition: background-color 300ms ease-in-out;
+}
+.button-line--rotated {
+   transform: translate(-50%) rotate(90deg);
 }

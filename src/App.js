@@ -148,7 +148,7 @@ class App extends Component {
 		/>
 
 		return (
-			<div className="content blob-bg-1">
+			<div className="wrapper blob-bg-1">
 				{ this.state.printForm 
 				  ? FormComponent
 				  : ResumeComponent
