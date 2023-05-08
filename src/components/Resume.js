@@ -10,7 +10,6 @@ class Resume extends Component {
          skillList,
          contactList,
          educExpList,
-         taskList,
          workExpList,
          toggleForm,
       } = this.props;
@@ -74,18 +73,18 @@ class Resume extends Component {
                   </section>
                </div>
 
-               <section className="resume-section mb-2">
+               <section className="resume-section">
                   <h2 className="fs-2 mb-1 f-bold f-upper">Summary</h2>
                   <p className="f-height c-black">{summary}</p>
                </section>
 
-               <section className="resume-section mb-2">
+               <section className="resume-section">
                   <h2 className="fs-2 mb-2 f-bold f-upper">Work experience</h2>
 
                   { workList }
                </section>
 
-               <section className="resume-section mb-2">
+               <section className="resume-section">
                   <h2 className="fs-2 mb-2 f-bold f-upper">Education</h2>
 
                   { educList }
