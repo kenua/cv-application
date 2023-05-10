@@ -1,8 +1,9 @@
-import { Component } from 'react';
+import { createRef, Component } from 'react';
 import Form from './components/Form';
 import Resume from './components/Resume';
 import uniqid from 'uniqid';
 import placeholderData from './placeholderData.json';
+import { fadeOut, fadeIn } from './modules/fadeFunctions.js';
 
 class App extends Component {
 	state = {
@@ -28,6 +29,7 @@ class App extends Component {
 		taskList: [],
 		workExpList: [],
 	};
+	contentElementRef = createRef();
 
 	handleInputChange = (e) => {
 		let stateKey = e.target.name;
@@ -114,11 +116,20 @@ class App extends Component {
 	toggleForm = (e) => {
 		e.preventDefault();
 
-		this.setState(prevState => ({
-			printForm: !prevState.printForm
-		}));
+		fadeOut(this.contentElementRef.current, () => {
+			this.setState(prevState => ({
+				printForm: !prevState.printForm,
+			}));
+		});
 	}
-      
+
+	componentDidUpdate(prevProps, prevState) {
+		if (this.state.printForm !== prevState.printForm) {
+			window.scroll(0, 0);
+			fadeIn(this.contentElementRef.current);
+		}
+	}
+
 	render() {
 		let { formFields, skillList, contactList, educExpList, taskList, workExpList } = this.state;
 		const FormComponent = <Form
@@ -134,6 +145,7 @@ class App extends Component {
 			populateWorkExpList={this.populateWorkExpList}
 			populateEducExpList={this.populateEducExpList}
 			toggleForm={this.toggleForm}
+			fadeOut={this.toggleView}
 		/>;
 		const ResumeComponent = <Resume 
 			name={formFields.nameField}
@@ -145,14 +157,17 @@ class App extends Component {
 			taskList={taskList}
 			workExpList={workExpList}
 			toggleForm={this.toggleForm}
+			toggleView={this.toggleView}
 		/>
 
 		return (
 			<div className="wrapper blob-bg-1">
-				{ this.state.printForm 
-				  ? FormComponent
-				  : ResumeComponent
-				}
+				<div ref={this.contentElementRef}>
+					{ this.state.printForm 
+					? FormComponent
+					: ResumeComponent
+					}
+				</div>
 			</div>
 		);
    }     
