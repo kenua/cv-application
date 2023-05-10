@@ -6,6 +6,7 @@
    --pink: #EFD5CD;
    --brown: #564033;
    --white: #fff;
+	--opaqueWhite: #F8F0F0;
    --black: #141111;
    --red: #FF3326;
 }
@@ -43,6 +44,11 @@ html {
 body {
 	font-family: 'Inter';
 	line-height: 1;
+	background-color: var(--opaqueWhite);
+	background-image: url('../assets/wave.svg'), url('../assets/upside-down-wave.svg');
+	background-position: left top, left bottom;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	color: var(--black);
 }
 ol, ul {
