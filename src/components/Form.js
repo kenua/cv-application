@@ -45,7 +45,7 @@ class Form extends Component {
          return (
             <li key={educObj.id} className="form-experience">
                <div className="form-experience__content">
-                  <h3 className="form-experience__heading fs-2 space-between">
+                  <h3 className="form-experience__heading fs-2 heading-and-time">
                      <span className="f-bold f-upper">{educObj.schoolName}</span>
                      <time dateTime={educObj.dateOfStudy}>{educObj.dateOfStudy}</time>
                   </h3>
@@ -67,7 +67,7 @@ class Form extends Component {
          return (
             <li key={workObj.id} className="form-experience">
                <div className="form-experience__content">
-                  <h3 className="form-experience__heading fs-2 space-between">
+                  <h3 className="form-experience__heading fs-2 heading-and-time">
                      <span className="f-upper f-bold">{workObj.companyName}</span>
 
                      <span>
@@ -94,8 +94,8 @@ class Form extends Component {
       });
 
       return (
-         <div className="form frame c-brown fs-1">
-            <form onSubmit={toggleForm}>
+         <form className="form c-brown fs-1" onSubmit={toggleForm}>
+            <div className="frame">
                <div className="form-flex-field mb-1">
                   <label htmlFor="nameField" className="form__label form-flex-field__label f-upper f-bold">Name</label>
                   <input 
@@ -280,14 +280,15 @@ class Form extends Component {
 
                <ul>{ workExpLi }</ul>
 
-               <button 
-                  className="button f-upper f-bold mt-2" 
-                  type="submit"
-               >
-                  Generate Resume
-               </button>
-            </form>
-         </div>
+            </div>
+
+            <button 
+               className="button f-upper f-bold mt-2" 
+               type="submit"
+            >
+               Generate Resume
+            </button>
+         </form>
       );
    }
 }

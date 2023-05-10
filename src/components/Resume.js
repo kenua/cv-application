@@ -17,7 +17,7 @@ class Resume extends Component {
       const workList = workExpList.map(workObj => {
          return (
             <div key={workObj.id} className="list-item c-black">
-               <h3 className="list-item__heading space-between">
+               <h3 className="list-item__heading heading-and-time">
                   <span className="bold-upper">
                      { workObj.companyName }
                   </span> 
@@ -38,7 +38,7 @@ class Resume extends Component {
       const educList = educExpList.map(educObj => {
          return (
             <div key={educObj.id} className="list-item c-black">
-               <h3 className="list-item__heading space-between">
+               <h3 className="list-item__heading heading-and-time">
                   <span className="bold-upper">
                      { educObj.schoolName }
                   </span> 

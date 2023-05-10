@@ -161,13 +161,11 @@ class App extends Component {
 		/>
 
 		return (
-			<div className="wrapper blob-bg-1">
-				<div ref={this.contentElementRef}>
-					{ this.state.printForm 
+			<div className="wrapper" ref={this.contentElementRef}>
+				{ this.state.printForm 
 					? FormComponent
 					: ResumeComponent
-					}
-				</div>
+				}
 			</div>
 		);
    }     

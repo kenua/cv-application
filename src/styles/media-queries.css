@@ -8,6 +8,11 @@
       border: 6px solid var(--brown);
       padding: 60px 50px;
    }
+   .heading-and-time {
+      flex-direction: row;
+      justify-content: space-between;
+      row-gap: 0px;
+   }
    .form__label {
       font-size: 2.4rem;
       text-align: right;

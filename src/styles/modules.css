@@ -35,9 +35,10 @@
 .mb-2 {
    margin-bottom: 32px;
 }
-.space-between {
+.heading-and-time {
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
+   row-gap: 4px;
 }
 .disc-list {
    list-style: disc;
