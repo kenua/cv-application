@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cv-application/static/css/main.12fafaa6.css",
+    "main.js": "/cv-application/static/js/main.a8e99112.js",
+    "static/media/Inter-Bold.ttf": "/cv-application/static/media/Inter-Bold.9aab1ebe6bd16660e37e.ttf",
+    "static/media/Inter-Regular.ttf": "/cv-application/static/media/Inter-Regular.b559a93b35af397f4b6f.ttf",
+    "static/media/upside-down-wave.svg": "/cv-application/static/media/upside-down-wave.fce0c7c17f31ca6da877.svg",
+    "static/media/wave.svg": "/cv-application/static/media/wave.73a3ab0e2531221bf905.svg",
+    "index.html": "/cv-application/index.html",
+    "main.12fafaa6.css.map": "/cv-application/static/css/main.12fafaa6.css.map",
+    "main.a8e99112.js.map": "/cv-application/static/js/main.a8e99112.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12fafaa6.css",
+    "static/js/main.a8e99112.js"
+  ]
+}
