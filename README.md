@@ -4,3 +4,6 @@ A React.js application where users can fill up a form to create a beautiful CV t
 🌐 [Live Preview](https://kenua.github.io/cv-application/)
 
 [![Screenshot](./screenshot.png)](https://kenua.github.io/cv-application/)
+
+# Todo List
+- [ ] Add form validation 🕵️
