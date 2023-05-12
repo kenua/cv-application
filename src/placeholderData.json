@@ -1,50 +1,46 @@
 {
    "formFields": {
-     "nameField": "john doe",
-     "jobTitleField": "web designer",
-     "summaryField": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+     "nameField": "Leslie Emery Madison",
+     "jobTitleField": "Web designer",
+     "summaryField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
    },
    "skillList": [
-     {"id": "lh4t25mb", "value": "figma"},
-     {"id": "lh4t2bay", "value": "sketch"},
-     {"id": "lh4t2cts", "value": "html"},
-     {"id": "lh4t2dup", "value": "css"},
-     {"id": "lh4t2fb2", "value": "git"},
-     {"id": "lh4t2gyg", "value": "sass"},
-     {"id": "lh4t2j4l", "value": "bootstrap"}
+     {"id": "lh4t25mb", "value": "Figma"},
+     {"id": "lh4t2bay", "value": "Sketch"},
+     {"id": "lh4t2cts", "value": "Adobe XD"}
    ],
    "contactList": [
-     {"id": "lh4t2uy9", "value": "johndoe.uk.net"},
+     {"id": "lh4t2uy9", "value": "leslieblog.uk.net"},
      {"id": "lh4t3294", "value": "123-456-789"},
-     {"id": "lh4t3904", "value": "johndoe@email.net"}
+     {"id": "lh4t3904", "value": "lesliemad@email.com"}
    ],
    "educExpList": [
-     {"dateOfStudy": "2023", "id": "lh4t5q0m", "schoolName": "school 1", "titleOfStudy": "web design"},
-     {"dateOfStudy": "2022", "id": "lh4t5qn9", "schoolName": "school 2", "titleOfStudy": "arts"}
+     {"dateOfStudy": "2023", "id": "lh4t5q0m", "schoolName": "University of Roseton", "titleOfStudy": "bachelor degree"},
+     {"dateOfStudy": "2022", "id": "lh4t5qn9", "schoolName": "Liceria University", "titleOfStudy": "bachelor of design"}
    ],
    "workExpList": [
       {
          "id": "lh4t25aa",
-         "companyName": "company 1",
-         "jobPosition": "janitor",
-         "startedJobAt": "2023",
+         "companyName": "Fauget studio",
+         "jobPosition": "Senior graphic designer",
+         "startedJobAt": "2020",
          "endedJobAt": "2022",
          "tasks": [
-            {"id": "lh4tnry7", "value": "item 1"},
-            {"id": "lh4tntmi", "value": "item 2"},
-            {"id": "lh4tnvqd", "value": "item 3"}
+            {"id": "lh4tnry7", "value": "Lorem ipsum dolor sit amet"},
+            {"id": "lh4tntmi", "value": "consectetur adipiscing elit, sed do eiusmod tempor incididunt"},
+            {"id": "lh4tnvqd", "value": "labore et dolore magna aliqua"}
          ]
       },
       {
          "id": "lh4t25ab",
-         "companyName": "company 2",
-         "jobPosition": "position 2",
-         "startedJobAt": "2021",
-         "endedJobAt": "2022",
+         "companyName": "En Larana Inc.",
+         "jobPosition": "graphic designer",
+         "startedJobAt": "2022",
+         "endedJobAt": "2023",
          "tasks": [
-            {"id": "lh4tnry7", "value": "item 1"},
-            {"id": "lh4tntmi", "value": "item 2"},
-            {"id": "lh4tnvqd", "value": "item 3"}
+            {"id": "lh4tnry7", "value": "Lorem ipsum dolor sit amet"},
+            {"id": "lh4tntmi", "value": "consectetur adipiscing elit, sed do eiusmod tempor incididunt"},
+            {"id": "lh4tnvqd", "value": "labore et dolore magna aliqua"}
          ]
       }
    ]

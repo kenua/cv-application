@@ -123,6 +123,20 @@ class App extends Component {
 		});
 	}
 
+	addDummyData = () => {
+		fadeOut(this.contentElementRef.current, () => {
+			window.scroll(0, 0);
+			this.setState(prevState => ({
+				formFields: {...prevState.formFields, ...placeholderData.formFields},
+				skillList: [...placeholderData.skillList],
+				contactList: [...placeholderData.contactList],
+				educExpList: [...placeholderData.educExpList],
+				workExpList: [...placeholderData.workExpList],
+			}));
+			fadeIn(this.contentElementRef.current);
+		});
+	}
+
 	componentDidUpdate(prevProps, prevState) {
 		if (this.state.printForm !== prevState.printForm) {
 			window.scroll(0, 0);
@@ -166,20 +180,17 @@ class App extends Component {
 					? FormComponent
 					: ResumeComponent
 				}
+				{ this.state.printForm 
+					&& <button 
+						className="button button--fixed f-upper f-bold mt-2" 
+						type="button" 
+						onClick={this.addDummyData}>		
+						Add dummy data
+						</button> 
+				}
 			</div>
 		);
-   }     
-	
-	// Add placeholder data
-	componentDidMount() {
-		this.setState(prevState => ({
-			formFields: {...prevState.formFields, ...placeholderData.formFields},
-			skillList: [...placeholderData.skillList],
-			contactList: [...placeholderData.contactList],
-			educExpList: [...placeholderData.educExpList],
-			workExpList: [...placeholderData.workExpList],
-		}));
-	}
+   }
 }
 
 export default App;
